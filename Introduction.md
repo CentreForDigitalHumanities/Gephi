@@ -10,21 +10,21 @@ Our dataset represents a slice of the debate that took place on Twitter right in
 ## 2.	Getting to know the data
 Let’s start by getting to know the dataset.
 
-Open [data_truckersconvoy.csv](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/files/data_truckerconvoy.csv) in a spreadsheet application of your choice (Excel, Numbers, Google Spreadsheets, etc.) and take a look around. What information can be found in this dataset? What types of insights do you think you can gain from doing a network analysis on this data?
+Open [data_truckersconvoy.csv](/files/data_truckerconvoy.csv) in a spreadsheet application of your choice (Excel, Numbers, Google Spreadsheets, etc.) and take a look around. What information can be found in this dataset? What types of insights do you think you can gain from doing a network analysis on this data?
 
 ## 3.	Nodes and edges tables
 Every network in Gephi consists of two data tables: a nodes table and an edges table. 
 
 The nodes table contains all information about our nodes. The nodes table always contains an Id column, which is used to identify the node. In this case, nodes represent Twitter users, and the Id column therefore shows their Twitter handle. Nodes tables can be enriched with extra information, too. We’ll be going into that later.
 
-The edges table describes the connections between the nodes. Every edges tables contains a Source and a Target column. In a directed network, the Source is the node from which the connection originates, while the Target is the ‘receiver’ of the connection.
+The edges table describes the connections between the nodes. Every edges tables contains a _Source_ and a _Target_ column. In a directed network, the Source is the node from which the connection originates, while the Target is the ‘receiver’ of the connection.
   
 ![Picture1](/img/Picture1.png)
 
 Open the nodes and edges tables in a spreadsheet application and compare the two. What do the connections in the edges table represent?
 
 ## 4.	Importing the datasets
-Time to make a network! Open Gephi and choose to make a New Project. We now need to import our edges and nodes tables. Go to File → Import Spreadsheet and select edges.csv.
+Time to make a network! Open Gephi and choose to make a New Project. We now need to import our edges and nodes tables. Go to `File` → `Import Spreadsheet` and select [edges.csv](/files/edges.csv).
 
 Gephi automatically recognizes that this is an edges tables. Choose Next and wait for Gephi to show the import report.
   
