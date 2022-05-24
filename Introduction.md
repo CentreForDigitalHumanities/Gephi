@@ -35,7 +35,7 @@ Our edges represent retweets. Think about what this means for these parameters a
 
 Next, let’s do the same for the nodes table. Import the spreadsheet. If all went well, you shouldn’t need to change any of the parameters. Choose to `Append to existing workspace`, so that the nodes and edges table are both imported in the same workspace.
 
-Valuable tips and tricks (courtesy of Marjolein Krijgsman)
+### Valuable tips and tricks (courtesy of Marjolein Krijgsman)
 -	Gephi has no ‘undo’ or ‘redo’ button. CTRL + Z does not work!
 -	Gephi does not list and save your actions and settings. Thus, take a notepad and write down the settings you use, so you will be able to remember what you did if you open your project later on. The Utrecht Data School in collaboration with Digital Humanities Lab has developed a plugin to automatically list all your setting. You can find and download the [Field Notes plugin](https://github.com/UUDigitalHumanitieslab/gephi-plugins/tree/fieldnotes).
 -	Save your project often (use the Save As option)! Also save intermediate results, as there is no undo button. If you make big changes to your visualization that do not turn out well, you will still have your old save.
