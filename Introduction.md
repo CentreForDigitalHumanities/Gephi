@@ -1,19 +1,19 @@
-_Getting started with network analysis
-Introductory Gephi course for Humanities staff_
+# Introductory Gephi course for Humanities
+Getting started with network analysis
 
 Author: [Jeroen Bakker](https://github.com/DeJeroenBakker)
 
-# 1.	Introduction
+## 1.	Introduction
 Welcome to this workshop! In this hands-on part of the session, you’ll be creating your own retweet network visualization in Gephi. We’ll be working with a large Twitter dataset containing 74.519 tweets posted between 9-10 February 2022. The tweets are related to the Canadian truckers protests (or Freedom Convoy), when large amounts of truckers occupied Canadian cities and highways to protest against vaccination mandates and other COVID measures. 
 
 Our dataset represents a slice of the debate that took place on Twitter right in the middle of these demonstrations. We’ll be aiming to find out which communities were involved in the online discussion, which accounts were key players and how the different actors were positioned in relation to each other.
 
-# 2.	Getting to know the data
+## 2.	Getting to know the data
 Let’s start by getting to know the dataset.
 
 Open [data_truckersconvoy.csv](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/files/data_truckerconvoy.csv) in a spreadsheet application of your choice (Excel, Numbers, Google Spreadsheets, etc.) and take a look around. What information can be found in this dataset? What types of insights do you think you can gain from doing a network analysis on this data?
 
-# 3.	Nodes and edges tables
+## 3.	Nodes and edges tables
 Every network in Gephi consists of two data tables: a nodes table and an edges table. 
 
 The nodes table contains all information about our nodes. The nodes table always contains an Id column, which is used to identify the node. In this case, nodes represent Twitter users, and the Id column therefore shows their Twitter handle. Nodes tables can be enriched with extra information, too. We’ll be going into that later.
@@ -24,7 +24,7 @@ The edges table describes the connections between the nodes. Every edges tables 
 
 Open the nodes and edges tables in a spreadsheet application and compare the two. What do the connections in the edges table represent?
 
-# 4.	Importing the datasets
+## 4.	Importing the datasets
 Time to make a network! Open Gephi and choose to make a New Project. We now need to import our edges and nodes tables. Go to File → Import Spreadsheet and select edges.csv.
 
 Gephi automatically recognizes that this is an edges tables. Choose Next and wait for Gephi to show the import report.
@@ -46,7 +46,7 @@ Valuable tips and tricks (courtesy of Marjolein Krijgsman)
 -	Hovering over features in Gephi will result in a small yellow box that explains shortly what the features can do.
 -	Don’t be afraid to try out different options and see how your visualizations change accordingly. To master Gephi you will just need to try out different things and will most likely encounter many frustrating problems.
 
-# 5.	The shape of a network to come
+## 5.	The shape of a network to come
 Most likely, this is will be staring at your from the screen right now:
   
 ![Picture3](/img/Picture3.png)
@@ -67,7 +67,7 @@ If you’re feeling experimental, try ticking other options and see how the netw
 
 Now that’s more like it! Let’s take a look around your network. You can zoom in and out by scrolling. Holding the right mouse button allows you to drag around the view.
 
-# 6.	Running statistics
+## 6.	Running statistics
 Now that our network looks like an actual network, we need to run some statistics to prepare for further analysis. Find the Statistics tab on the right-hand side and run the Average Degree and Average Weighted Degree calculations. Gephi will now calculate these metrics for each of the nodes. 
 
 Go to the Data Laboratory tab on the top and navigate to your nodes table. Look at that: the results from our calculations have been added to the dataset!
@@ -84,7 +84,7 @@ Because our nodes changed sizes, we need to give them some space. Go back to For
 
 Our network is becoming more and more readable by the minute!
 
-# 7.	Modularity classes
+## 7.	Modularity classes
 One of the main reasons to do network analysis is to detect communities in a network of actors. Communities are groups of nodes that are intimately connected. It depends on the context what these groups represent. In our case, users that form a community very often retweet each other, which in most cases points to a high level of agreement. This can help us detect ideological or topical communities within a debate.
 
 In Gephi, communities can be detected by the Modularity option under the Statistics tabs. Run Modularity. You will be asked to set a resolution. This will influence how big or small the resulting communities will be. The higher the number, the bigger the communities. Let’s start with the default resolution, 1. Run the algorithm. 
@@ -103,7 +103,7 @@ Sometimes, the number of communities makes it hard to parse the network. In that
 
 The network after running the Modularity analysis with a resolution of 1.9.
 
-# 8.	Using filters
+## 8.	Using filters
 Our network is still a bit messy. We can use filters to clean things up. First, let’s start by only keeping the main clusters, eliminating the ‘noise’ on the borders of the network. Go to the Filters tab → Attributes → Partition. 
   
 ![Picture9](/img/Picture9.png)
@@ -120,17 +120,17 @@ This option makes sure that only nodes that are now visible will show their labe
 
 You can now turn on the Modularity Class filter again, which will return the network to the view that we made earlier.
 
-# 9.	Exporting the visualization
+## 9.	Exporting the visualization
 Now that we have a readable network, we can export our visualization as an image file so that we can share it with others. Go to the Preview tab at the top of the window. Here we can change how our network appears in the image. The structure of the network won’t change here, only how it shows up. 
 
 Play around with the options here and see what they do. Please note that you need to click Refresh for the changes to show up. Find a combination of settings that result in a network that you think is nice and clear. 
 
 Once you’re happy with how your visualization looks, we can export the image. Go to Export on the bottom left, and choose PNG. Click options and increase the resolution to be very high (for example, 16000 x 16000 pixels). Because networks can often contain tiny details and letters, you want your image file to be of high quality so that you can zoom in without loss of detail. Export the image.
 
-# 10.	Exporting your data
+## 10.	Exporting your data
 Finally, let’s get the results of our network analyses out of Gephi. Go to the Data Laboratory, select the nodes table and click Export Table. The data that was visible in your nodes table will now be exported as a CSV file, which can be used for further analysis in different environments (e.g. Excel, Tableau, Python, R).  
 
-# 11.	What’s next?
+## 11.	What’s next?
 This tutorial taught you the basics of Gephi by guiding you through the creation of a network visualization. You know how network data is structured, how to import that data, spatialize the network, run statistics, change the appearance of nodes based on the results of these metrics, use filters to clean up the network and export the result as an image. These steps are all you need to tackle all kinds of different networks in Gephi.
 
 However, we have barely scraped the surface of what Gephi can do. There are many more different metrics, visualization options, and lay-out algorithms waiting for you. Gephi is very well documented, and hovering over options will give you a clear description of what each option does. It is therefore very easy to start experimenting with the possibilities of this program. Want to make nodes bigger based on their number of followers? Want to colorize the most connected nodes within the network? It’s all possible.
