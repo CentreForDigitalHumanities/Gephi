@@ -1,15 +1,15 @@
 # Gephi
 
-Getting started with network analysis
-Introductory Gephi course for Humanities staff
+_Getting started with network analysis
+Introductory Gephi course for Humanities staff_
 
-1.	Introduction
+# 1.	Introduction
 
 Welcome to this workshop! In this hands-on part of the session, you’ll be creating your own retweet network visualization in Gephi. We’ll be working with a large Twitter dataset containing 74.519 tweets posted between 9-10 February 2022. The tweets are related to the Canadian truckers protests (or Freedom Convoy), when large amounts of truckers occupied Canadian cities and highways to protest against vaccination mandates and other COVID measures. 
 
 Our dataset represents a slice of the debate that took place on Twitter right in the middle of these demonstrations. We’ll be aiming to find out which communities were involved in the online discussion, which accounts were key players and how the different actors were positioned in relation to each other.
 
-2.	Getting to know the data
+# 2.	Getting to know the data
 
 Let’s start by getting to know the dataset.
 
