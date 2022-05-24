@@ -4,19 +4,16 @@ Introductory Gephi course for Humanities staff_
 Author: [Jeroen Bakker](https://github.com/DeJeroenBakker)
 
 # 1.	Introduction
-
 Welcome to this workshop! In this hands-on part of the session, you’ll be creating your own retweet network visualization in Gephi. We’ll be working with a large Twitter dataset containing 74.519 tweets posted between 9-10 February 2022. The tweets are related to the Canadian truckers protests (or Freedom Convoy), when large amounts of truckers occupied Canadian cities and highways to protest against vaccination mandates and other COVID measures. 
 
 Our dataset represents a slice of the debate that took place on Twitter right in the middle of these demonstrations. We’ll be aiming to find out which communities were involved in the online discussion, which accounts were key players and how the different actors were positioned in relation to each other.
 
 # 2.	Getting to know the data
-
 Let’s start by getting to know the dataset.
 
 Open [data_truckersconvoy.csv](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/files/data_truckerconvoy.csv) in a spreadsheet application of your choice (Excel, Numbers, Google Spreadsheets, etc.) and take a look around. What information can be found in this dataset? What types of insights do you think you can gain from doing a network analysis on this data?
 
 # 3.	Nodes and edges tables
-
 Every network in Gephi consists of two data tables: a nodes table and an edges table. 
 
 The nodes table contains all information about our nodes. The nodes table always contains an Id column, which is used to identify the node. In this case, nodes represent Twitter users, and the Id column therefore shows their Twitter handle. Nodes tables can be enriched with extra information, too. We’ll be going into that later.
@@ -28,8 +25,7 @@ The edges table describes the connections between the nodes. Every edges tables 
 Open the nodes and edges tables in a spreadsheet application and compare the two. What do the connections in the edges table represent?
 
 # 4.	Importing the datasets
-
-Time to make a network! Open Gephi and choose to make a New Project. We now need to import our edges and nodes tables. Go to File  Import Spreadsheet and select edges.csv.
+Time to make a network! Open Gephi and choose to make a New Project. We now need to import our edges and nodes tables. Go to File → Import Spreadsheet and select edges.csv.
 
 Gephi automatically recognizes that this is an edges tables. Choose Next and wait for Gephi to show the import report.
   
@@ -40,20 +36,17 @@ Our edges represent retweets. Think about what this means for these parameters a
 
 Next, let’s do the same for the nodes table. Import the spreadsheet. If all went well, you shouldn’t need to change any of the parameters. Choose to Append to existing workspace, so that the nodes and edges table are both imported in the same workspace.
 
-
 Valuable tips and tricks (courtesy of Marjolein Krijgsman)
-
-	Gephi has no ‘undo’ or ‘redo’ button. CTRL + Z does not work!
-	Gephi does not list and save your actions and settings. Thus, take a notepad and write down the settings you use, so you will be able to remember what you did if you open your project later on. The Utrecht Data School in collaboration with Digital Humanities Lab has developed a plugin to automatically list all your setting. You can find and download the [Field Notes plugin](https://github.com/UUDigitalHumanitieslab/gephi-plugins/tree/fieldnotes).
-	Save your project often (use the Save As option)! Also save intermediate results, as there is no undo button. If you make big changes to your visualization that do not turn out well, you will still have your old save.
-	When you run an algorithm on a huge dataset, don’t be afraid let it run for a couple of hours or even overnight.
-	In Gephi you can use various algorithms. ForceAtlas2 is the most used algorithm. If you use Gephi for academic research, you will need to understand how the algorithm works on at least a basic level. To do this, you can read up on the algorithms in the papers written by the developers.
-	For others to understand a Gephi visualization, you will need to provide additional contextual information.
-	Hovering over features in Gephi will result in a small yellow box that explains shortly what the features can do.
-	Don’t be afraid to try out different options and see how your visualizations change accordingly. To master Gephi you will just need to try out different things and will most likely encounter many frustrating problems.
+-	Gephi has no ‘undo’ or ‘redo’ button. CTRL + Z does not work!
+-	Gephi does not list and save your actions and settings. Thus, take a notepad and write down the settings you use, so you will be able to remember what you did if you open your project later on. The Utrecht Data School in collaboration with Digital Humanities Lab has developed a plugin to automatically list all your setting. You can find and download the [Field Notes plugin](https://github.com/UUDigitalHumanitieslab/gephi-plugins/tree/fieldnotes).
+-	Save your project often (use the Save As option)! Also save intermediate results, as there is no undo button. If you make big changes to your visualization that do not turn out well, you will still have your old save.
+-	When you run an algorithm on a huge dataset, don’t be afraid let it run for a couple of hours or even overnight.
+-	In Gephi you can use various algorithms. ForceAtlas2 is the most used algorithm. If you use Gephi for academic research, you will need to understand how the algorithm works on at least a basic level. To do this, you can read up on the algorithms in the papers written by the developers.
+-	For others to understand a Gephi visualization, you will need to provide additional contextual information.
+-	Hovering over features in Gephi will result in a small yellow box that explains shortly what the features can do.
+-	Don’t be afraid to try out different options and see how your visualizations change accordingly. To master Gephi you will just need to try out different things and will most likely encounter many frustrating problems.
 
 # 5.	The shape of a network to come
-
 Most likely, this is will be staring at your from the screen right now:
   
 ![Picture3](/img/Picture3.png)
@@ -111,7 +104,7 @@ Sometimes, the number of communities makes it hard to parse the network. In that
 The network after running the Modularity analysis with a resolution of 1.9.
 
 # 8.	Using filters
-Our network is still a bit messy. We can use filters to clean things up. First, let’s start by only keeping the main clusters, eliminating the ‘noise’ on the borders of the network. Go to the Filters tab  Attributes  Partition. 
+Our network is still a bit messy. We can use filters to clean things up. First, let’s start by only keeping the main clusters, eliminating the ‘noise’ on the borders of the network. Go to the Filters tab → Attributes → Partition. 
   
 ![Picture9](/img/Picture9.png)
 
@@ -121,7 +114,7 @@ Find the Modularity Class (Node) filter and drag this to the Queries window unde
 
 Always be aware that filtering is a very deliberate process. You inherently exclude data from your visualization once you start filtering. If you use filters in your analysis, be very clear in describing what you filtered and why. 
 
-Filters can be used for different means as well. For example, we can use a filter to view the names of the biggest nodes in the network. Go to Filters  Attributes  Range and drag the Weighted In-Degree filter to the Queries window. This filter allows us to filter based on a range of Weighted In-Degree values, meaning the amount of retweets an account received. Run the filter an start dragging the slider on the left. When you only see big accounts in your network, click the A with an arrow in the Filters window:
+Filters can be used for different means as well. For example, we can use a filter to view the names of the biggest nodes in the network. Go to Filters → Attributes → Range and drag the Weighted In-Degree filter to the Queries window. This filter allows us to filter based on a range of Weighted In-Degree values, meaning the amount of retweets an account received. Run the filter an start dragging the slider on the left. When you only see big accounts in your network, click the A with an arrow in the Filters window:
 
 This option makes sure that only nodes that are now visible will show their labels (in this case, their Twitter handles). Turn on the labels by clicking the black T on the bottom of the overview. You can change the size and appearance of the labels with the options on the right. Try playing around with these until you’re happy with the result.
 
