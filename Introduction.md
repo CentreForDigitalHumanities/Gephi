@@ -94,7 +94,7 @@ Our network is becoming more and more readable by the minute!
 # 7.	Modularity classes
 One of the main reasons to do network analysis is to detect communities in a network of actors. Communities are groups of nodes that are intimately connected. It depends on the context what these groups represent. In our case, users that form a community very often retweet each other, which in most cases points to a high level of agreement. This can help us detect ideological or topical communities within a debate.
 
-In Gephi, communities can be detected by the Modularity option under the Statistics tabs. Run Modularity. You will be asked to set a resolution. This will influence how big or small the resulting communities will be. The higher the number, the bigger the communities. Let’s start with the default resolution, 1. Run the algorithm. 
+In Gephi, communities can be detected by the Modularity option under the Statistics tabs. Run `Modularity`. You will be asked to set a resolution. This will influence how big or small the resulting communities will be. The higher the number, the bigger the communities. Let’s start with the default resolution, 1. Run the algorithm. 
 
 The results screen will show you the number of communities that Gephi detected. That’s quite a lot! Look at the network. Why do you think that is?
 
