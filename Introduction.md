@@ -148,4 +148,4 @@ This tutorial taught you the basics of Gephi by guiding you through the creation
 
 However, we have barely scraped the surface of what Gephi can do. There are many more different metrics, visualization options, and lay-out algorithms waiting for you. Gephi is very well documented, and hovering over options will give you a clear description of what each option does. It is therefore very easy to start experimenting with the possibilities of this program. Want to make nodes bigger based on their number of followers? Want to colorize the most connected nodes within the network? It’s all possible.
 
-Try to come up with questions that you want to ask this dataset, and try to answer them using Gephi. Need input? Just ask Jeroen!
+Try to come up with questions that you want to ask this dataset, and try to answer them using Gephi. Need input? Just ask [Jeroen](https://github.com/DeJeroenBakker)!
