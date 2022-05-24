@@ -12,7 +12,7 @@ Our dataset represents a slice of the debate that took place on Twitter right in
 
 Let’s start by getting to know the dataset.
 
-Open the file data_truckersconvoy.csv in a spreadsheet application of your choice (Excel, Numbers, Google Spreadsheets, etc.) and take a look around. What information can be found in this dataset? What types of insights do you think you can gain from doing a network analysis on this data?
+Open data_truckersconvoy.csv](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/files/data_truckerconvoy.csv) in a spreadsheet application of your choice (Excel, Numbers, Google Spreadsheets, etc.) and take a look around. What information can be found in this dataset? What types of insights do you think you can gain from doing a network analysis on this data?
 
 # 3.	Nodes and edges tables
 
