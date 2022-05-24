@@ -90,44 +90,44 @@ In Gephi, communities can be detected by the Modularity option under the Statist
 
 The results screen will show you the number of communities that Gephi detected. That’s quite a lot! Look at the network. Why do you think that is?
 
-Colorizing the network based on the communities is one of the staples of network analysis. It helps us reveal the underlying structures of the network. Go to the `Appearance` tab → Nodes → Color → Partition and select Modularity Class. Partition  (as opposed to Unique or Ranking) allows us to assign a unique color to each different value for a metric. Go to Palette… and choose a nice set of colors for your communities. Now apply the colors. The result will look something like this:
+Colorizing the network based on the communities is one of the staples of network analysis. It helps us reveal the underlying structures of the network. Go to the `Appearance` tab → `Nodes` → ``Color`` `→ ``Partition` and select `Modularity Class`. `Partition`  (as opposed to `Unique` or `Ranking`) allows us to assign a unique color to each different value for a metric. Go to Palette… and choose a nice set of colors for your communities. Now apply the colors. The result will look something like this:
 
 ![Picture7](/img/Picture7.png)
 
-The network after running the Modularity analysis with a resolution of 1.
+The network after running the `Modularity` analysis with a resolution of 1.
 
-Sometimes, the number of communities makes it hard to parse the network. In that case, it might be useful to increase the resolution of the Modularity algorithm to find less, but bigger communities. Repeat the above steps, but with a larger resolution (for example, 1.5 or 1.8). See if the results improve. Please note that you need to regenerate the palette after each iteration of your Modularity calculation!
+Sometimes, the number of communities makes it hard to parse the network. In that case, it might be useful to increase the resolution of the Modularity algorithm to find less, but bigger communities. Repeat the above steps, but with a larger resolution (for example, 1.5 or 1.8). See if the results improve. Please note that you need to regenerate the palette after each iteration of your `Modularity` calculation!
   
 ![Picture8](/img/Picture8.png)
 
-The network after running the Modularity analysis with a resolution of 1.9.
+The network after running the `Modularity` analysis with a resolution of 1.9.
 
 ## 8.	Using filters
-Our network is still a bit messy. We can use filters to clean things up. First, let’s start by only keeping the main clusters, eliminating the ‘noise’ on the borders of the network. Go to the Filters tab → Attributes → Partition. 
+Our network is still a bit messy. We can use filters to clean things up. First, let’s start by only keeping the main clusters, eliminating the ‘noise’ on the borders of the network. Go to the `Filters` tab → `Attributes` → `Partition`. 
   
 ![Picture9](/img/Picture9.png)
 
-Find the Modularity Class (Node) filter and drag this to the Queries window underneath. By clicking the boxes next to the Modularity Class ID’s, you can select which communities you want to keep. Start the Filter and select the biggest communities, starting from the top. The Context window on the top right shows you the percentage of nodes and edges that you have filtered out. You network will now look a lot more clean.
+Find the `Modularity Class (Node)` filter and drag this to the `Queries` window underneath. By clicking the boxes next to the Modularity Class ID’s, you can select which communities you want to keep. Start the Filter and select the biggest communities, starting from the top. The `Context` window on the top right shows you the percentage of nodes and edges that you have filtered out. You network will now look a lot more clean.
 
 ![Picture10](/img/Picture10.png)
 
 Always be aware that filtering is a very deliberate process. You inherently exclude data from your visualization once you start filtering. If you use filters in your analysis, be very clear in describing what you filtered and why. 
 
-Filters can be used for different means as well. For example, we can use a filter to view the names of the biggest nodes in the network. Go to Filters → Attributes → Range and drag the Weighted In-Degree filter to the Queries window. This filter allows us to filter based on a range of Weighted In-Degree values, meaning the amount of retweets an account received. Run the filter an start dragging the slider on the left. When you only see big accounts in your network, click the A with an arrow in the Filters window:
+Filters can be used for different means as well. For example, we can use a filter to view the names of the biggest nodes in the network. Go to `Filters` → `Attributes` → `Range` and drag the `Weighted In-Degree` filter to the `Queries` window. This filter allows us to filter based on a range of `Weighted In-Degree` values, meaning the amount of retweets an account received. Run the filter an start dragging the slider on the left. When you only see big accounts in your network, click the A with an arrow in the `Filters` window:
 
-This option makes sure that only nodes that are now visible will show their labels (in this case, their Twitter handles). Turn on the labels by clicking the black T on the bottom of the overview. You can change the size and appearance of the labels with the options on the right. Try playing around with these until you’re happy with the result.
+This option makes sure that only nodes that are now visible will show their labels (in this case, their Twitter handles). Turn on the labels by clicking the black `T` on the bottom of the overview. You can change the size and appearance of the labels with the options on the right. Try playing around with these until you’re happy with the result.
 
-You can now turn on the Modularity Class filter again, which will return the network to the view that we made earlier.
+You can now turn on the `Modularity Class` filter again, which will return the network to the view that we made earlier.
 
 ## 9.	Exporting the visualization
-Now that we have a readable network, we can export our visualization as an image file so that we can share it with others. Go to the Preview tab at the top of the window. Here we can change how our network appears in the image. The structure of the network won’t change here, only how it shows up. 
+Now that we have a readable network, we can export our visualization as an image file so that we can share it with others. Go to the `Preview` tab at the top of the window. Here we can change how our network appears in the image. The structure of the network won’t change here, only how it shows up. 
 
 Play around with the options here and see what they do. Please note that you need to click Refresh for the changes to show up. Find a combination of settings that result in a network that you think is nice and clear. 
 
-Once you’re happy with how your visualization looks, we can export the image. Go to Export on the bottom left, and choose PNG. Click options and increase the resolution to be very high (for example, 16000 x 16000 pixels). Because networks can often contain tiny details and letters, you want your image file to be of high quality so that you can zoom in without loss of detail. Export the image.
+Once you’re happy with how your visualization looks, we can export the image. Go to `Export` on the bottom left, and choose PNG. Click options and increase the resolution to be very high (for example, 16000 x 16000 pixels). Because networks can often contain tiny details and letters, you want your image file to be of high quality so that you can zoom in without loss of detail. Export the image.
 
 ## 10.	Exporting your data
-Finally, let’s get the results of our network analyses out of Gephi. Go to the Data Laboratory, select the nodes table and click Export Table. The data that was visible in your nodes table will now be exported as a CSV file, which can be used for further analysis in different environments (e.g. Excel, Tableau, Python, R).  
+Finally, let’s get the results of our network analyses out of Gephi. Go to the `Data Laboratory`, select the nodes table and click `Export Table`. The data that was visible in your nodes table will now be exported as a CSV file, which can be used for further analysis in different environments (e.g. Excel, Tableau, Python, R).  
 
 ## 11.	What’s next?
 This tutorial taught you the basics of Gephi by guiding you through the creation of a network visualization. You know how network data is structured, how to import that data, spatialize the network, run statistics, change the appearance of nodes based on the results of these metrics, use filters to clean up the network and export the result as an image. These steps are all you need to tackle all kinds of different networks in Gephi.
