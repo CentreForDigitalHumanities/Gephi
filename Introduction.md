@@ -1,6 +1,7 @@
-
 _Getting started with network analysis
 Introductory Gephi course for Humanities staff_
+
+Author: [Jeroen Bakker](https://github.com/DeJeroenBakker)
 
 # 1.	Introduction
 
