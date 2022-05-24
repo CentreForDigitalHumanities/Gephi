@@ -23,6 +23,7 @@ The nodes table contains all information about our nodes. The nodes table always
 
 The edges table describes the connections between the nodes. Every edges tables contains a Source and a Target column. In a directed network, the Source is the node from which the connection originates, while the Target is the ‘receiver’ of the connection.
   
+![Picture1](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture1.png)
 
 Open the nodes and edges tables in a spreadsheet application and compare the two. What do the connections in the edges table represent?
 
@@ -31,8 +32,8 @@ Open the nodes and edges tables in a spreadsheet application and compare the two
 Time to make a network! Open Gephi and choose to make a New Project. We now need to import our edges and nodes tables. Go to File  Import Spreadsheet and select edges.csv.
 
 Gephi automatically recognizes that this is an edges tables. Choose Next and wait for Gephi to show the import report.
-
- 
+  
+![Picture2](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture2.png)
 
 Here we can decide a few key elements of our network, such as the type of network (directed, indirected or mixed), how parallel edges should be managed, and whether nodes should be able to connect to themselves (self-loops). 
 Our edges represent retweets. Think about what this means for these parameters and set them accordingly. Not sure? Feel free to ask your instructor to help.
@@ -54,16 +55,22 @@ Valuable tips and tricks (courtesy of Marjolein Krijgsman)
 # 5.	The shape of a network to come
 
 Most likely, this is will be staring at your from the screen right now:
+  
+![Picture3](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture3.png)
 
 No worries! This is the shape of an untouched network. Contained within this Rothko-like monstrosity are all your nodes and edges. In the upper-right corner, in the Context window, you can check exactly how many of them there are.
 
 Let’s start with a basic spatialization of the network. We’ll be using the force-directed lay-out algorithm ForceAtlas2 for this. In essence, ForceAtlas2 treats nodes as if they were connected to each other by rubber bands. Stronger connections means that the nodes are attracted to one another, while loose (or weak) connections result in the nodes pushing each other away. This way tightly connected groups of nodes will cluster together, resulting in a network that can be read quite intuitively. 
 
 Go to the Lay-out window and choose ForceAtlas2 from the list of options.
+  
+![Picture4](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture4.png)
 
 We want to start by roughly spatializing our network, and running the more precise algorithms later on. Tick the Approximate Repulsion and Dissuade Hubs boxes and click Run. It will look like the Big Bang will take place on your screen. Let this run for a little while, until the network barely moves anymore, then Stop the algorithm. 
 
 If you’re feeling experimental, try ticking other options and see how the network changes.
+  
+![Picture5](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture5.png)
 
 Now that’s more like it! Let’s take a look around your network. You can zoom in and out by scrolling. Holding the right mouse button allows you to drag around the view.
 
@@ -75,6 +82,8 @@ Go to the Data Laboratory tab on the top and navigate to your nodes table. Look 
 Go back to the Overview. Let’s use our calculations to transform the look of our network. We want to make nodes of users with many retweets bigger, and colorize the nodes based on how many times they have been retweeted. Go the Appearance window on the left. Here you can transform the visual appearance of the network based on your data values.
 
 Let’s start with the size of the nodes. Choose Nodes and the Size option (three circles). Go to Ranking, which gradually increases the size of a node based on a higher or lower ranking of a value. In this case, choose Weighted In-Degree (or: how many retweets the node has received). The Min and Max size are up to you. For the size of this network, 10 and 100 will be appropriate. Now Apply this transformation.
+
+![Picture6](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture6.png)
 
 Next, do the same for the color of the nodes by choosing the painter palette icon.
 
@@ -91,17 +100,24 @@ The results screen will show you the number of communities that Gephi detected. 
 
 Colorizing the network based on the communities is one of the staples of network analysis. It helps us reveal the underlying structures of the network. Go to the Appearance tab  Nodes  Color  Partition and select Modularity Class. Partition  (as opposed to Unique or Ranking) allows us to assign a unique color to each different value for a metric. Go to Palette… and choose a nice set of colors for your communities. Now apply the colors. The result will look something like this:
 
+![Picture7](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture7.png)
+
 The network after running the Modularity analysis with a resolution of 1.
 
 Sometimes, the number of communities makes it hard to parse the network. In that case, it might be useful to increase the resolution of the Modularity algorithm to find less, but bigger communities. Repeat the above steps, but with a larger resolution (for example, 1.5 or 1.8). See if the results improve. Please note that you need to regenerate the palette after each iteration of your Modularity calculation!
- 
-The network after running the Modularity analysis with a resolution of 1.9.
+  
+![Picture8](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture8.png)
 
+The network after running the Modularity analysis with a resolution of 1.9.
 
 # 8.	Using filters
 Our network is still a bit messy. We can use filters to clean things up. First, let’s start by only keeping the main clusters, eliminating the ‘noise’ on the borders of the network. Go to the Filters tab  Attributes  Partition. 
+  
+![Picture9](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture9.png)
 
 Find the Modularity Class (Node) filter and drag this to the Queries window underneath. By clicking the boxes next to the Modularity Class ID’s, you can select which communities you want to keep. Start the Filter and select the biggest communities, starting from the top. The Context window on the top right shows you the percentage of nodes and edges that you have filtered out. You network will now look a lot more clean.
+
+![Picture10](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture10.png)
 
 Always be aware that filtering is a very deliberate process. You inherently exclude data from your visualization once you start filtering. If you use filters in your analysis, be very clear in describing what you filtered and why. 
 
