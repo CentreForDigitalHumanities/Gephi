@@ -17,7 +17,7 @@ Every network in Gephi consists of two data tables: a nodes table and an edges t
 
 The nodes table contains all information about our nodes. The nodes table always contains an Id column, which is used to identify the node. In this case, nodes represent Twitter users, and the Id column therefore shows their Twitter handle. Nodes tables can be enriched with extra information, too. We’ll be going into that later.
 
-The edges table describes the connections between the nodes. Every edges tables contains a _Source_ and a _Target_ column. In a directed network, the Source is the node from which the connection originates, while the Target is the ‘receiver’ of the connection.
+The edges table describes the connections between the nodes. Every edges tables contains a _Source_ and a _Target_ column. In a directed network, the _Source_ is the node from which the connection originates, while the _Target_ is the ‘receiver’ of the connection.
   
 ![Picture1](/img/Picture1.png)
 
@@ -26,14 +26,14 @@ Open the nodes and edges tables in a spreadsheet application and compare the two
 ## 4.	Importing the datasets
 Time to make a network! Open Gephi and choose to make a New Project. We now need to import our edges and nodes tables. Go to `File` → `Import Spreadsheet` and select [edges.csv](/files/edges.csv).
 
-Gephi automatically recognizes that this is an edges tables. Choose Next and wait for Gephi to show the import report.
+Gephi automatically recognizes that this is an edges tables. Choose `Next` and wait for Gephi to show the import report.
   
 ![Picture2](/img/Picture2.png)
 
 Here we can decide a few key elements of our network, such as the type of network (directed, indirected or mixed), how parallel edges should be managed, and whether nodes should be able to connect to themselves (self-loops). 
 Our edges represent retweets. Think about what this means for these parameters and set them accordingly. Not sure? Feel free to ask your instructor to help.
 
-Next, let’s do the same for the nodes table. Import the spreadsheet. If all went well, you shouldn’t need to change any of the parameters. Choose to Append to existing workspace, so that the nodes and edges table are both imported in the same workspace.
+Next, let’s do the same for the nodes table. Import the spreadsheet. If all went well, you shouldn’t need to change any of the parameters. Choose to `Append to existing workspace`, so that the nodes and edges table are both imported in the same workspace.
 
 Valuable tips and tricks (courtesy of Marjolein Krijgsman)
 -	Gephi has no ‘undo’ or ‘redo’ button. CTRL + Z does not work!
@@ -50,7 +50,7 @@ Most likely, this is will be staring at your from the screen right now:
   
 ![Picture3](/img/Picture3.png)
 
-No worries! This is the shape of an untouched network. Contained within this Rothko-like monstrosity are all your nodes and edges. In the upper-right corner, in the Context window, you can check exactly how many of them there are.
+No worries! This is the shape of an untouched network. Contained within this Rothko-like monstrosity are all your nodes and edges. In the upper-right corner, in the `Context` window, you can check exactly how many of them there are.
 
 Let’s start with a basic spatialization of the network. We’ll be using the force-directed lay-out algorithm ForceAtlas2 for this. In essence, ForceAtlas2 treats nodes as if they were connected to each other by rubber bands. Stronger connections means that the nodes are attracted to one another, while loose (or weak) connections result in the nodes pushing each other away. This way tightly connected groups of nodes will cluster together, resulting in a network that can be read quite intuitively. 
 
@@ -58,7 +58,7 @@ Go to the Lay-out window and choose ForceAtlas2 from the list of options.
   
 ![Picture4](/img/Picture4.png)
 
-We want to start by roughly spatializing our network, and running the more precise algorithms later on. Tick the Approximate Repulsion and Dissuade Hubs boxes and click Run. It will look like the Big Bang will take place on your screen. Let this run for a little while, until the network barely moves anymore, then Stop the algorithm. 
+We want to start by roughly spatializing our network, and running the more precise algorithms later on. Tick the `Approximate Repulsion` and `Dissuade Hubs` boxes and click `Run`. It will look like the Big Bang will take place on your screen. Let this run for a little while, until the network barely moves anymore, then `Stop` the algorithm. 
 
 If you’re feeling experimental, try ticking other options and see how the network changes.
   
@@ -67,13 +67,13 @@ If you’re feeling experimental, try ticking other options and see how the netw
 Now that’s more like it! Let’s take a look around your network. You can zoom in and out by scrolling. Holding the right mouse button allows you to drag around the view.
 
 ## 6.	Running statistics
-Now that our network looks like an actual network, we need to run some statistics to prepare for further analysis. Find the Statistics tab on the right-hand side and run the Average Degree and Average Weighted Degree calculations. Gephi will now calculate these metrics for each of the nodes. 
+Now that our network looks like an actual network, we need to run some statistics to prepare for further analysis. Find the `Statistics` tab on the right-hand side and run the `Average Degree` and `Average Weighted Degree` calculations. Gephi will now calculate these metrics for each of the nodes. 
 
-Go to the Data Laboratory tab on the top and navigate to your nodes table. Look at that: the results from our calculations have been added to the dataset!
+Go to the `Data Laboratory` tab on the top and navigate to your nodes table. Look at that: the results from our calculations have been added to the dataset!
 
-Go back to the Overview. Let’s use our calculations to transform the look of our network. We want to make nodes of users with many retweets bigger, and colorize the nodes based on how many times they have been retweeted. Go the Appearance window on the left. Here you can transform the visual appearance of the network based on your data values.
+Go back to the `Overview`. Let’s use our calculations to transform the look of our network. We want to make nodes of users with many retweets bigger, and colorize the nodes based on how many times they have been retweeted. Go the `Appearance` window on the left. Here you can transform the visual appearance of the network based on your data values.
 
-Let’s start with the size of the nodes. Choose Nodes and the Size option (three circles). Go to Ranking, which gradually increases the size of a node based on a higher or lower ranking of a value. In this case, choose Weighted In-Degree (or: how many retweets the node has received). The Min and Max size are up to you. For the size of this network, 10 and 100 will be appropriate. Now Apply this transformation.
+Let’s start with the size of the nodes. Choose `Nodes` and the `Size` option (three circles). Go to `Ranking`, which gradually increases the size of a node based on a higher or lower ranking of a value. In this case, choose `Weighted In-Degree` (or: how many retweets the node has received). The `Min` and `Max` size are up to you. For the size of this network, 10 and 100 will be appropriate. Now `Apply` this transformation.
 
 ![Picture6](/img/Picture6.png)
 
