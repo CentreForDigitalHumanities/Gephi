@@ -54,7 +54,7 @@ No worries! This is the shape of an untouched network. Contained within this Rot
 
 Let’s start with a basic spatialization of the network. We’ll be using the force-directed lay-out algorithm ForceAtlas2 for this. In essence, ForceAtlas2 treats nodes as if they were connected to each other by rubber bands. Stronger connections means that the nodes are attracted to one another, while loose (or weak) connections result in the nodes pushing each other away. This way tightly connected groups of nodes will cluster together, resulting in a network that can be read quite intuitively. 
 
-Go to the Lay-out window and choose ForceAtlas2 from the list of options.
+Go to the `Lay-out` window and choose ForceAtlas2 from the list of options.
   
 ![Picture4](/img/Picture4.png)
 
