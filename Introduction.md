@@ -24,9 +24,7 @@ The nodes table contains all information about our nodes. The nodes table always
 The edges table describes the connections between the nodes. Every edges tables contains a Source and a Target column. In a directed network, the Source is the node from which the connection originates, while the Target is the ‘receiver’ of the connection.
   
 ![Picture1](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture1.png)
-
-<p align="center">
-  <img width="460" height="300" src="[http://www.fillmurray.com/460/300](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture1.png)">
+<p align="center"><img src="[http://www.fillmurray.com/460/300](https://github.com/CentreForDigitalHumanities/Gephi/blob/main/img/Picture1.png)">
 </p>
 
 Open the nodes and edges tables in a spreadsheet application and compare the two. What do the connections in the edges table represent?
