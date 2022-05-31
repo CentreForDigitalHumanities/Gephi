@@ -46,7 +46,7 @@ Next, let’s do the same for the nodes table. Import the spreadsheet. If all we
 -	Don’t be afraid to try out different options and see how your visualizations change accordingly. To master Gephi you will just need to try out different things and will most likely encounter many frustrating problems.
 
 ## 5.	The shape of a network to come
-Most likely, this is will be staring at your from the screen right now:
+Most likely, this is will be staring at you from the screen right now:
   
 ![Picture3](/img/Picture3.png)
 
