@@ -90,7 +90,7 @@ In Gephi, communities can be detected by the Modularity option under the Statist
 
 The results screen will show you the number of communities that Gephi detected. That’s quite a lot! Look at the network. Why do you think that is?
 
-Colorizing the network based on the communities is one of the staples of network analysis. It helps us reveal the underlying structures of the network. Go to the `Appearance` tab → `Nodes` → ``Color`` `→ ``Partition` and select `Modularity Class`. `Partition`  (as opposed to `Unique` or `Ranking`) allows us to assign a unique color to each different value for a metric. Go to Palette… and choose a nice set of colors for your communities. Now apply the colors. The result will look something like this:
+Colorizing the network based on the communities is one of the staples of network analysis. It helps us reveal the underlying structures of the network. Go to the `Appearance` tab → `Nodes` → `Color` → `Partition` and select `Modularity Class`. `Partition`  (as opposed to `Unique` or `Ranking`) allows us to assign a unique color to each different value for a metric. Go to Palette… and choose a nice set of colors for your communities. Now apply the colors. The result will look something like this:
 
 ![Picture7](/img/Picture7.png)
 
