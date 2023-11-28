@@ -1,9 +1,9 @@
 # Introductory Gephi course for Humanities
 
-Author: [Jeroen Bakker](https://github.com/DeJeroenBakker)
-
 ## 1.	Introduction
-Welcome to this workshop! In this hands-on part of the session, you’ll be creating your own retweet network visualization in Gephi. We’ll be working with a large Twitter dataset containing 74.519 tweets posted between 9-10 February 2022. The tweets are related to the Canadian truckers protests (or Freedom Convoy), when large amounts of truckers occupied Canadian cities and highways to protest against vaccination mandates and other COVID measures. 
+Welcome to this workshop!
+
+In this hands-on part of the session, you’ll be creating your own retweet network visualization in [Gephi](https://gephi.org/). We’ll be working with [a large Twitter dataset](/files/data_truckerconvoy.csv) containing 74.519 tweets posted between 9-10 February 2022. The tweets are related to the Canadian truckers protests (or Freedom Convoy), when large amounts of truckers occupied Canadian cities and highways to protest against vaccination mandates and other COVID measures. 
 
 Our dataset represents a slice of the debate that took place on Twitter right in the middle of these demonstrations. We’ll be aiming to find out which communities were involved in the online discussion, which accounts were key players and how the different actors were positioned in relation to each other.
 
@@ -15,7 +15,7 @@ Open [data_truckersconvoy.csv](/files/data_truckerconvoy.csv) in a spreadsheet a
 ## 3.	Nodes and edges tables
 Every network in Gephi consists of two data tables: a nodes table and an edges table. 
 
-The nodes table contains all information about our nodes. The nodes table always contains an Id column, which is used to identify the node. In this case, nodes represent Twitter users, and the Id column therefore shows their Twitter handle. Nodes tables can be enriched with extra information, too. We’ll be going into that later.
+The nodes table contains all information about our nodes. The nodes table always contains an `Id column`, which is used to identify the node. In this case, nodes represent Twitter users, and the Id column therefore shows their Twitter handle. Nodes tables can be enriched with extra information, too. We’ll be going into that later.
 
 The edges table describes the connections between the nodes. Every edges tables contains a _Source_ and a _Target_ column. In a directed network, the _Source_ is the node from which the connection originates, while the _Target_ is the ‘receiver’ of the connection.
   
@@ -37,7 +37,7 @@ Next, let’s do the same for the nodes table. Import the spreadsheet. If all we
 
 ### Valuable tips and tricks (courtesy of [Marjolein Krijgsman](https://github.com/MarjoleinKrijgsman))
 -	Gephi has no ‘undo’ or ‘redo’ button. CTRL + Z does not work!
--	Gephi does not list and save your actions and settings. Thus, take a notepad and write down the settings you use, so you will be able to remember what you did if you open your project later on. The Utrecht Data School in collaboration with Digital Humanities Lab has developed a plugin to automatically list all your setting. You can find and download the [Field Notes plugin](https://github.com/UUDigitalHumanitieslab/gephi-plugins/tree/fieldnotes).
+-	Gephi does not list and save your actions and settings. Thus, take a notepad and write down the settings you use, so you will be able to remember what you did if you open your project later on. The [Data School](https://dataschool.nl/) in collaboration with [Research Software Lab](https://cdh.uu.nl/about/research-software-lab/) has developed a plugin to automatically list all your setting. You can find and download the [Field Notes plugin](https://github.com/UUDigitalHumanitieslab/gephi-plugins/tree/fieldnotes).
 -	Save your project often (use the Save As option)! Also save intermediate results, as there is no undo button. If you make big changes to your visualization that do not turn out well, you will still have your old save.
 -	When you run an algorithm on a huge dataset, don’t be afraid let it run for a couple of hours or even overnight.
 -	In Gephi you can use various algorithms. [ForceAtlas2](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0098679) is the most used algorithm. If you use Gephi for academic research, you will need to understand how the algorithm works on at least a basic level. To do this, you can read up on the algorithms in the papers written by the developers.
