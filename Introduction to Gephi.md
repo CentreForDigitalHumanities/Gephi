@@ -119,19 +119,31 @@ This option makes sure that only nodes that are now visible will show their labe
 
 You can now turn on the `Modularity Class` filter again, which will return the network to the view that we made earlier.
 
-## 9.	Exporting the visualization
+## 9. Ego Network
+As it stands, our visualization displays everything in our data. Sometimes you want to focus on specific nodes and its relationships, however. A very simple way of doing this is to hover your mouse over a node. It will now highlight all its direct connections. A more advanced method is the Ego Network.
+The ego network is a filter in Gephi. Go to the Filter window on the right-hand side, open the Topology folder and find Ego Network. Drag it to the Queries window below. This is now one of our filters. 
+To use this filter, we need to fill in the name of the entity we’re interested in. Next, click OK and then Filter.
+Our node and all its direct connections will now be highlighted. We can increase the depth of the ego network using the Depth dropdown menu in the filter. Setting it to 2, for example, will also display all nodes connected to the nodes shown above.
+Ego networks are a very helpful way to identify patterns in your graph. It allows you to focus on specific entities and its connections, and will often reveal connections that you might not have noticed within the full graph.
+
+![Picture13](/img/Picture13.png)
+
+![Picture14](/img/Picture14.png)
+
+
+## 10.	Exporting the visualization
 Now that we have a readable network, we can export our visualization as an image file so that we can share it with others. Go to the `Preview` tab at the top of the window. Here we can change how our network appears in the image. The structure of the network won’t change here, only how it shows up. 
 
 Play around with the options here and see what they do. Please note that you need to click Refresh for the changes to show up. Find a combination of settings that result in a network that you think is nice and clear. 
 
 Once you’re happy with how your visualization looks, we can export the image. Go to `Export` on the bottom left, and choose PNG. Click options and increase the resolution to be very high (for example, 16000 x 16000 pixels). Because networks can often contain tiny details and letters, you want your image file to be of high quality so that you can zoom in without loss of detail. Export the image.
 
-## 10.	Exporting your data
+## 11.	Exporting your data
 Finally, let’s get the results of our network analyses out of Gephi. Go to the `Data Laboratory`, select the nodes table and click `Export Table`. The data that was visible in your nodes table will now be exported as a CSV file, which can be used for further analysis in different environments (e.g. Excel, Tableau, Python, R).  
 
-## 11.	What’s next?
+## 12.	What’s next?
 This tutorial taught you the basics of Gephi by guiding you through the creation of a network visualization. You know how network data is structured, how to import that data, spatialize the network, run statistics, change the appearance of nodes based on the results of these metrics, use filters to clean up the network and export the result as an image. These steps are all you need to tackle all kinds of different networks in Gephi.
 
 However, we have barely scraped the surface of what Gephi can do. There are many more different metrics, visualization options, and lay-out algorithms waiting for you. Gephi is very well documented, and hovering over options will give you a clear description of what each option does. It is therefore very easy to start experimenting with the possibilities of this program. Want to make nodes bigger based on their number of followers? Want to colorize the most connected nodes within the network? It’s all possible.
 
-Try to come up with questions that you want to ask this dataset, and try to answer them using Gephi. Need input? Just ask [Jeroen](https://github.com/DeJeroenBakker)!
+Try to come up with questions that you want to ask this dataset, and try to answer them using Gephi. Need input? Just ask the instructors!
